@@ -1,0 +1,371 @@
+:root {
+  --primary-color: #9461d9;
+  --primary-light: #c9a7ff;
+  --primary-dark: #56318a;
+
+  --bg-light: #f6f0ff;
+  --text-light: #30213f;
+
+  --bg-dark: #241536;
+  --text-dark: #f5edff;
+
+  --body-background: #ffffff;
+  --body-text: #30213f;
+
+  --card-background: #ffffff;
+  --border-muted: #e2d2f5;
+
+  --transition-speed: 0.3s;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {}
+ @media (prefers-reduced-motion: reduce) {
+}
+/* TIPOGRAFÍA DEL PORTAFOLIO */
+
+section[id] {
+  scroll-margin-top: 56px;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #c9a7ff;
+  outline-offset: 3px;
+  box-shadow: none;
+}
+
+/* BOTONES Y COLORES PRINCIPALES */
+
+.btn-primary,
+.bg-primary {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark) !important;
+  border-color: var(--primary-dark) !important;
+}
+
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.navbar {
+  background-color: var(--primary-color) !important;
+  transition: background-color var(--transition-speed) ease;
+}
+
+.navbar-brand,
+.nav-link {
+  transition: color var(--transition-speed) ease;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
+
+/* PORTADA */
+
+.hero {
+  min-height: calc(100vh - 56px);
+  color: #ffffff;
+
+  background: linear-gradient(
+    -45deg,
+    #d9c2ff,
+    #a879e8,
+    #7545b5,
+    #402064
+  );
+
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  overflow: hidden;
+}
+
+.hero-content {
+  animation: fadeInUp 1.5s ease both;
+}
+
+.hero-avatar {
+  width: 180px;
+  height: 180px;
+  border: 5px solid rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.25);
+}
+
+.hero-intro {
+  max-width: 680px;
+  font-size: 1.15rem;
+}
+
+/* TITULOS */
+
+.section-title {
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+/* TARJETAS SOBRE MI */
+
+.about-card {
+  background: var(--card-background);
+  border: 1px solid var(--border-muted);
+  border-radius: 0.75rem;
+  transition: transform var(--transition-speed) ease,
+              box-shadow var(--transition-speed) ease;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.75rem 1.5rem rgba(120, 75, 170, 0.18);
+}
+
+/* PROYECTOS */
+
+.project-card {
+  overflow: hidden;
+  border: 2px solid var(--primary-light);
+  animation: heartbeat 3s ease-in-out infinite;
+  transition: transform var(--transition-speed) ease,
+              box-shadow var(--transition-speed) ease;
+}
+
+.project-card:hover {
+  z-index: 1;
+  transform: scale(1.05);
+  box-shadow: 0 1rem 2rem rgba(86, 49, 138, 0.2);
+  animation-play-state: paused;
+}
+
+.project-card .card-img-top {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+}
+
+.project-stack {
+  font-size: 0.9rem;
+}
+
+/* FORMACION Y CONTACTO */
+
+.form-control {
+  min-height: 48px;
+  border-color: var(--border-muted);
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(148, 97, 217, 0.2);
+}
+
+textarea.form-control {
+  min-height: 140px;
+}
+
+/* REDES SOCIALES */
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  transition: transform var(--transition-speed) ease;
+}
+
+.social-links a:hover {
+  transform: translateY(-4px);
+}
+
+/* MODO OSCURO */
+
+body.dark {
+  --body-background: #241536;
+  --body-text: #f5edff;
+  --card-background: #35204d;
+  --border-muted: #63438a;
+
+  background-color: var(--body-background);
+  color: var(--body-text);
+}
+
+body.dark .bg-light {
+  background-color: #302043 !important;
+}
+
+body.dark .navbar {
+  background-color: #35204d !important;
+}
+
+body.dark .navbar-brand,
+body.dark .nav-link {
+  color: #f5edff !important;
+}
+
+body.dark .about-card,
+body.dark .card {
+  background-color: #35204d;
+  color: #f5edff;
+  border-color: #7952a6;
+}
+
+body.dark .section-title,
+body.dark .card-title,
+body.dark .card-text,
+body.dark .form-label,
+body.dark .project-stack {
+  color: #f5edff;
+}
+
+body.dark .text-primary {
+  color: #c9a7ff !important;
+}
+
+body.dark .text-dark {
+  color: #f5edff !important;
+}
+
+body.dark .form-control {
+  background-color: #46305e;
+  border-color: #7952a6;
+  color: #ffffff;
+}
+
+body.dark .form-control::placeholder {
+  color: #d5c1ec;
+}
+
+body.dark .form-control:focus {
+  background-color: #46305e;
+  color: #ffffff;
+}
+
+body.dark .experience-date {
+  color: #d5c1ec;
+}
+
+body.dark .social-links .text-danger {
+  color: #e6b5ff !important;
+}
+
+/* ANIMACIONES */
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+/* ADAPTACION A CELULARES */
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: calc(100vh - 56px);
+    padding: 3rem 0;
+  }
+
+  .hero-avatar {
+    width: 150px;
+    height: 150px;
+  }
+
+  .hero .display-3 {
+    font-size: clamp(2.4rem, 10vw, 3.5rem);
+  }
+
+  .project-card:hover {
+    transform: scale(1.02);
+  }
+
+  .social-links {
+    gap: 1.25rem !important;
+  }
+}
+
+/* ACCESIBILIDAD */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* CAMBIAR TODA LA TIPOGRAFÍA */
+
+html,
+body,
+body *,
+button,
+input,
+textarea,
+select {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 700;
+}
+
+.hero h1 {
+    font-weight: 800 !important;
+}
+
+.navbar-brand {
+    font-weight: 700 !important;
+}
+
+.nav-link {
+    font-weight: 500 !important;
+}
+}

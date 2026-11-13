@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portafolio personal de Yaneiry Altagracia, estudiante de informática.">
+    <meta name="author" content="Yaneiry Altagracia">
+    <meta name="theme-color" content="#35204d">
+
+    <title>Yaneiry Altagracia | Portafolio Estudiantil</title>
+
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#inicio">Yaneiry Altagracia</a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+
+                    <li class="nav-item ms-lg-2">
+                        <button id="themeToggle" class="btn btn-outline-light btn-sm" type="button">
+                            <i id="themeIcon" class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <section id="inicio" class="hero d-flex align-items-center justify-content-center text-center">
+        <div class="container hero-content">
+
+            <img class="hero-avatar"
+                src="https://i.postimg.cc/dQNg1PmT/834355767-4451393688467523-1709238505458870356-n.jpg"
+                alt="Fotografía de Yaneiry Altagracia"
+                width="190" height="190">
+
+            <h1 class="display-3 fw-bold mt-4">¡Hola! Soy Yaneiry Altagracia</h1>
+
+            <p class="lead mb-4">Estudiante de Informática</p>
+
+            <p class="hero-intro mx-auto mb-4">
+                Aprendiendo, creando y descubriendo el maravilloso
+                mundo de la tecnología y el desarrollo de aplicaciones.
+            </p>
+
+            <a class="btn btn-light btn-lg" href="#sobre-mi">
+                Conóceme <i class="fas fa-arrow-down ms-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <section id="sobre-mi" class="py-5">
+        <div class="container">
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title mb-4">
+                        <i class="fas fa-user text-primary me-2"></i>Sobre mí
+                    </h2>
+
+                    <p class="lead">
+                        ¡Hola! Soy Yaneiry Altagracia, estudiante de
+                        Bachillerato Técnico en Diseño y Desarrollo de
+                        Aplicaciones Informáticas.
+
+                        Me gusta la informática, especialmente diseñar
+                        páginas web, combinar diferentes tonos de colores
+                        y descubrir cómo darles funciones a los elementos
+                        mediante la programación.
+
+                        Me considero una persona con deseos de aprender,
+                        mejorar y desarrollar nuevas habilidades.
+
+                        Fuera del mundo de la informática, también me
+                        apasiona la gastronomía y me gustaría llegar a ser
+                        chef profesional. 👩‍🍳
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-4 mt-3">
+                <div class="col-md-4">
+                    <article class="about-card h-100 text-center p-4">
+                        <i class="fas fa-laptop-code fa-3x text-primary mb-3"></i>
+                        <h3 class="h5">Mi interés por la tecnología</h3>
+                        <p>Me gusta conocer nuevas herramientas, diseñar páginas y aprender a programar.</p>
+                    </article>
+                </div>
+
+                <div class="col-md-4">
+                    <article class="about-card h-100 text-center p-4">
+                        <i class="fas fa-users fa-3x text-primary mb-3"></i>
+                        <h3 class="h5">Trabajo en equipo</h3>
+                        <p>Disfruto colaborar con mis compañeros, compartir ideas y aprender de los demás.</p>
+                    </article>
+                </div>
+
+                <div class="col-md-4">
+                    <article class="about-card h-100 text-center p-4">
+                        <i class="fas fa-lightbulb fa-3x text-primary mb-3"></i>
+                        <h3 class="h5">Mis metas</h3>
+                        <p>Seguir aprendiendo, superar mis dificultades y convertirme en una buena profesional.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">
+                <i class="fas fa-code text-primary me-2"></i>
+                Mis conocimientos y habilidades
+            </h2>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="about-card text-center p-4 h-100">
+                        <i class="fab fa-html5 fa-3x text-primary mb-3"></i>
+                        <h3 class="h5">HTML</h3>
+                        <p>Aprendizaje de la estructura básica y organización de páginas web.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="about-card text-center p-4 h-100">
+                        <i class="fab fa-css3-alt fa-3x text-primary mb-3"></i>
+                        <h3 class="h5">CSS</h3>
+                        <p>Diseño, colores, estilos y presentación visual de sitios web.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="about-card text-center p-4 h-100">
+                        <i class="fab fa-js fa-3x text-primary mb-3"></i>
+                        <h3 class="h5">JavaScript</h3>
+                        <p>Conociendo cómo agregar interactividad y funciones a las páginas web.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="about-card text-center p-4 h-100">
+                        <i class="fas fa-database fa-3x text-primary mb-3"></i>
+                        <h3 class="h5">Bases de datos</h3>
+                        <p>Aprendiendo a crear, organizar y consultar información mediante bases de datos.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="about-card text-center p-4 h-100">
+                        <i class="fas fa-file-excel fa-3x text-primary mb-3"></i>
+                        <h3 class="h5">Microsoft Office</h3>
+                        <p>Conocimientos de Word, Excel y otras herramientas de oficina.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="about-card text-center p-4 h-100">
+                        <i class="fas fa-palette fa-3x text-primary mb-3"></i>
+                        <h3 class="h5">Diseño creativo</h3>
+                        <p>Interés por la combinación de colores, la creatividad y el diseño visual.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="formacion" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="section-title mb-4">
+                <i class="fas fa-graduation-cap text-primary me-2"></i>
+                Mi formación académica
+            </h2>
+
+            <div class="about-card p-4">
+                <h3 class="h5">
+                    Bachillerato Técnico en Diseño y Desarrollo
+                    de Aplicaciones Informáticas
+                </h3>
+
+                <p>
+                    Actualmente estoy desarrollando mis conocimientos
+                    en programación, diseño web, bases de datos,
+                    desarrollo de aplicaciones y herramientas digitales.
+                </p>
+
+                <p class="mb-0">
+                    <strong>Institución:</strong>
+                    Politécnico Prof. Víctor Pascual Agüero.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-4">
+                <i class="fas fa-envelope text-primary me-2"></i>Contacto
+            </h2>
+
+            <p class="text-center lead mb-5">
+                Gracias por visitar mi portafolio.
+                Me encanta compartir mis aprendizajes y proyectos.
+            </p>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100">
+                            <i class="fas fa-paper-plane me-2"></i>Enviar mensaje
+                        </button>
+                    </form>
+
+                    <div class="text-center mt-5">
+                        <h3 class="h5 mb-3">Mis redes sociales</h3>
+
+                        <div class="social-links d-flex justify-content-center gap-4">
+                            <a href="https://www.instagram.com/" target="_blank"
+                                rel="noopener noreferrer" aria-label="Instagram">
+                                <i class="fab fa-instagram fa-2x"></i>
+                            </a>
+
+                            <a href="https://www.github.com/" target="_blank"
+                                rel="noopener noreferrer" aria-label="GitHub">
+                                <i class="fab fa-github fa-2x"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+        <p class="mb-0">
+            © 2026 Yaneiry Altagracia.
+            Hecho con <i class="fas fa-heart text-danger"></i>
+            y muchas ganas de aprender.
+        </p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
